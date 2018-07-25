@@ -16,5 +16,10 @@ namespace AsyncAwait
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(this, "text2");
+        }
     }
 }
