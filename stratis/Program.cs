@@ -9,7 +9,7 @@ namespace stratis
     class Program
     {
         static void Main(string[] args)
-        {
+        {//hex to ascii po dvou znacich (= 8bitu = 1byte)
             string s = "ec4064d5a4e49103024881df4629bf5f67e4d49e49ccf6f1a4d33829db98d712";
             string[] s2 ={"7b22515220636f6465203231783231223a7b22766572746963616c223a5b5b372c322c312c37",
                         "5d2c5b312c312c312c312c312c315d2c5b312c332c312c312c312c312c312c332c315d2c5b31",
