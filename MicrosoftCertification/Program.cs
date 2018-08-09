@@ -20,7 +20,8 @@ namespace Types
             short myShort = (short)myInt;
             Console.WriteLine(myShort);
 
-
+            MicrosoftCertification.ServiceReference1.ServiceDataClient client = new MicrosoftCertification.ServiceReference1.ServiceDataClient();
+            Console.WriteLine(client.GetData(25));
 
 
         }
