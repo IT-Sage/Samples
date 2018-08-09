@@ -17,14 +17,14 @@ namespace ExcelSample
     {
         static void Main(string[] args)
         {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-
-            string path = @"F:\GitRepos\Samples\ExcelSample\bin\Debug\sabrsula_zalohy_kamery.XLSX";
+            string path = @"C:\Users\ryska\Source\Repos\Samples\ExcelSample\sabrsula_zalohy_kamery.XLSX";
             _Application excel = new ExcelNamespace.Application();
             ExcelNamespace.Workbook wb = excel.Workbooks.Open(path);
-            ExcelNamespace.Worksheet ws = wb.Worksheets[5];
+            ExcelNamespace.Worksheet ws = wb.Worksheets[2];
             ExcelNamespace.Range range = ws.UsedRange;
 
+
+            string[,] array = (string[,])range.;
             try
             {
                 int rowCount = range.Rows.Count;
