@@ -24,7 +24,7 @@ namespace ExcelSample
             ExcelNamespace.Range range = ws.UsedRange;
 
 
-            string[,] array = (string[,])range.;
+            string[,] array = (string[,])range[1,1];
             try
             {
                 int rowCount = range.Rows.Count;
